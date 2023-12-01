@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -24,7 +25,11 @@ export default function Home() {
           <br />
         </div>
         <div className="flex gap-5">
-          <div className="flex justify-center items-center text-center box-border h-20 w-20 rounded-full shadow-xl bg-yellow-300 hover:bg-yellow-200">趣味</div>
+          <Link href="/hobby">
+              <div className="flex justify-center items-center text-center box-border h-20 w-20 rounded-full shadow-xl bg-yellow-300 hover:bg-yellow-200">
+                趣味
+              </div>
+          </Link>
           <div className="flex justify-center items-center text-center box-border h-20 w-20 rounded-full shadow-xl bg-red-300 hover:bg-red-200">お仕事</div>
         </div>
       </div>
